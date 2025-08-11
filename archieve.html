@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Achievers Day — Poster</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Montserrat:wght@300;500;700;900&family=Playfair+Display:wght@400;700&display=swap" rel="stylesheet">
+
+  <style>
+    :root{
+      --bg1:#0b1020;
+      --bg2:#1e2330;
+      --accent:#f7c948;
+      --muted:#bfc7d6;
+    }
+
+    /* Full-page poster sizing suitable for social square or A4 print */
+    html,body{height:100%;margin:0;font-family:Montserrat,system-ui,Segoe UI,Roboto,"Helvetica Neue",Arial;color:var(--muted);background:linear-gradient(135deg,var(--bg1),var(--bg2));}
+
+    /* subtle bokeh / glowing circles */
+    .bokeh{position:fixed;inset:0;pointer-events:none;z-index:0;}
+    .bokeh span{position:absolute;border-radius:50%;filter:blur(40px);opacity:0.12;}
+    .b1{width:520px;height:520px;left:-80px;top:-120px;background:radial-gradient(circle at 30% 30%, #ffd27a, transparent 40%);} 
+    .b2{width:360px;height:360px;right:-60px;top:30px;background:radial-gradient(circle at 30% 30%, #ffd27a, transparent 40%);} 
+    .b3{width:260px;height:260px;left:20%;bottom:-80px;background:radial-gradient(circle at 30% 30%, #8ad3ff, transparent 40%);} 
+
+    .container{position:relative;z-index:2;max-width:1000px;margin:36px auto;padding:36px;box-sizing:border-box}
+
+    /* Poster card */
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.03), rgba(255,255,255,0.02));border-radius:18px;padding:36px 44px;box-shadow:0 10px 40px rgba(2,6,23,0.6);border:1px solid rgba(255,255,255,0.04)}
+
+    header{display:flex;flex-direction:column;align-items:center;text-align:center;margin-bottom:18px}
+    .pretitle{letter-spacing:4px;font-weight:700;color:var(--accent);font-size:14px}
+    h1{margin:10px 0 6px;font-family:'Playfair Display',serif;font-size:46px;color:#fff;letter-spacing:2px}
+    .subtitle{font-family:'Great Vibes',cursive;font-size:52px;color:var(--accent);margin-top:6px}
+
+    .meta{display:flex;gap:18px;flex-wrap:wrap;justify-content:center;margin-top:8px}
+    .meta div{background:rgba(255,255,255,0.03);padding:8px 12px;border-radius:8px;font-weight:600;color:var(--muted);font-size:14px}
+
+    .content{display:flex;gap:28px;margin-top:26px}
+    .left{flex:1;min-width:300px}
+    .right{width:360px;background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.005));padding:18px;border-radius:12px}
+
+    .welcome{background:rgba(0,0,0,0.25);padding:18px;border-radius:10px;font-style:italic;color:#f7f7f7}
+    .welcome p{margin:0;font-size:15px;line-height:1.45}
+
+    .highlights h3,.right h3{margin:0 0 12px;font-size:18px;color:var(--accent)}
+    .highlights ul{margin:0;padding-left:18px;line-height:1.6}
+    .highlights li{margin-bottom:8px}
+
+    .achievers{margin-top:18px}
+    .achievers .name{font-family:'Great Vibes',cursive;font-size:20px;color:#fff}
+    .achievers .role{font-size:13px;color:var(--muted);letter-spacing:0.6px}
+
+    .keypoints{margin-top:16px;font-size:13px}
+    .keypoints li{margin-bottom:8px}
+
+    .footer{margin-top:26px;text-align:center;font-size:13px;color:var(--muted)}
+    .contact{margin-top:8px;font-weight:700;color:#fff}
+
+    /* small screens */
+    @media (max-width:880px){
+      .content{flex-direction:column}
+      .right{width:100%}
+      h1{font-size:34px}
+      .subtitle{font-size:40px}
+    }
+  </style>
+</head>
+<body>
+  <div class="bokeh" aria-hidden="true">
+    <span class="b1"></span>
+    <span class="b2"></span>
+    <span class="b3"></span>
+  </div>
+
+  <div class="container">
+    <div class="card">
+      <header>
+        <div class="pretitle">IT'S TIME TO CELEBRATE</div>
+        <h1>Excellence and Success</h1>
+        <div class="subtitle">ARCHIEVER'S DAY</div>
+
+        <div class="meta">
+          <div>14 AUGUST 2025</div>
+          <div>2:30 PM</div>
+          <div>AU CONVENTION HALL, VSP</div>
+        </div>
+      </header>
+
+      <main class="content">
+        <section class="left">
+          <div class="welcome">
+            <p><strong>Welcome Message</strong><br>
+            "Join us as we celebrate the dedication, hard work, and outstanding achievements of our students. Achievers Day is our way of recognizing the bright minds who inspire us all."</p>
+          </div>
+
+          <div class="highlights">
+            <h3>Event Highlights</h3>
+            <ul>
+              <li>&gt;&gt; Award ceremony for top performers</li>
+              <li>&gt;&gt; Speeches by guest of honor and top students</li>
+              <li>&gt;&gt; Cultural performances</li>
+              <li>&gt;&gt; Photo session and refreshments</li>
+            </ul>
+          </div>
+
+          <div class="achievers">
+            <h3>Achievers - 2026</h3>
+            <div style="margin-top:8px">
+              <div class="name">Mounika — Science</div>
+              <div class="role">Innovation Medal</div>
+            </div>
+
+            <div style="margin-top:10px">
+              <div class="name">Rupa</div>
+              <div class="role">Outstanding Sportsmanship</div>
+            </div>
+
+            <div style="margin-top:10px">
+              <div class="name">Sevitha</div>
+              <div class="role">Community Service Recognition</div>
+            </div>
+
+            <div style="margin-top:10px">
+              <div class="name">Mounika M.</div>
+              <div class="role">Leadership Award</div>
+            </div>
+
+            <div style="margin-top:10px">
+              <div class="name">Kavya</div>
+              <div class="role">Mathematics Excellence Award</div>
+            </div>
+          </div>
+
+        </section>
+
+        <aside class="right">
+          <h3>Key Points to Note</h3>
+          <ul class="keypoints">
+            <li>&gt;&gt; Dress code: Formal or traditional</li>
+            <li>&gt;&gt; Arrival time: 2:30 PM</li>
+          </ul>
+
+          <h3 style="margin-top:14px">Motivational Quote</h3>
+          <p style="font-style:italic;margin:6px 0 0">"Success is the sum of small efforts, repeated day in and day out." – Robert Collier</p>
+
+          <div style="border-top:1px dashed rgba(255,255,255,0.04);margin-top:12px;padding-top:12px">
+            <div style="font-weight:700;color:var(--accent)">THANK YOU</div>
+            <div class="contact">KMRS CONTACT: 9676514067</div>
+          </div>
+        </aside>
+      </main>
+
+    </div>
+  </div>
+</body>
+</html>
